@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zafr Shehab | Content, marketing, design, data analysis</title>
+<meta name="description" content="Content, marketing, design and data analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6f9; --surface:#ffffff; --ink:#0f1b2d; --muted:#5a677d;
+  --line:#dbe1ea; --accent:#2446e8; --accent-ink:#ffffff; --tint:#e6ebff;
+  --font:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1424; --surface:#141d33; --ink:#eaf0fb; --muted:#9fadc6;
+    --line:#26324d; --accent:#7b93ff; --accent-ink:#0d1424; --tint:#1b2748;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.75 var(--font)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:1.1rem;padding-bottom:1.1rem;flex-wrap:wrap}
+.brand{font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+nav{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+#lang{font:inherit;font-size:.9rem;font-weight:500;padding:.3rem .85rem;border-radius:99px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.hero{padding:5rem 0 4.5rem}
+.hero .hi{color:var(--muted);margin:0 0 1rem;font-size:1.1rem}
+.hero ul{list-style:none;margin:0 0 2rem;padding:0}
+.hero li a{display:inline-block;font-weight:700;font-size:clamp(2.4rem,7.5vw,5rem);line-height:1.2;color:var(--ink);text-decoration:none;transition:color .2s}
+.hero li a:hover,.hero li a:focus-visible{color:var(--accent)}
+.hero .lead{max-width:36rem;color:var(--muted);font-size:1.15rem;margin:0 0 2rem}
+.btn{display:inline-block;padding:.75rem 1.5rem;border-radius:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700}
+section{padding:3.75rem 0;border-top:1px solid var(--line)}
+h2{font-weight:700;font-size:1.8rem;margin:0 0 .5rem}
+.sub{color:var(--muted);margin:0 0 2rem;max-width:36rem}
+h3{font-weight:700;font-size:1.2rem;margin:0 0 .3rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.card p{margin:0;color:var(--muted)}
+.tag{display:inline-block;background:var(--tint);color:var(--accent);font-size:.85rem;font-weight:500;padding:.1rem .7rem;border-radius:99px;margin-bottom:.8rem}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.thumb{height:9rem;border-radius:8px;background:var(--tint);margin-bottom:1rem;display:grid;place-items:center;color:var(--muted);font-size:.9rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.todo{color:var(--muted);font-style:italic}
+.contact a.big{display:block;font-size:clamp(1.4rem,4vw,2.2rem);font-weight:700;text-decoration:none;margin-bottom:1rem;word-break:break-all}
+.social{display:flex;gap:1.25rem;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){
+  .grid,.work,.about{grid-template-columns:1fr}
+  .hero{padding:3rem 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero li a{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" data-ar="Zafr Shehab" data-en="Zafr Shehab">Zafr Shehab</a>
+    <nav aria-label="Main">
+      <a href="#services" data-ar="الخدمات" data-en="Services">Services</a>
+      <a href="#work" data-ar="الأعمال" data-en="Work">Work</a>
+      <a href="#about" data-ar="عنّي" data-en="About">About</a>
+      <a href="#contact" data-ar="تواصل" data-en="Contact">Contact</a>
+      <button id="lang" type="button" aria-label="Change language">العربية</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <p class="hi" data-ar="أهلًا، أنا Zafr Shehab وأعمل في" data-en="Hi, I'm Zafr Shehab. I work in">Hi, I'm Zafr Shehab. I work in</p>
+    <ul>
+      <li><a href="#content" data-ar="صناعة المحتوى" data-en="Content.">Content.</a></li>
+      <li><a href="#marketing" data-ar="التسويق" data-en="Marketing.">Marketing.</a></li>
+      <li><a href="#design" data-ar="التصميم" data-en="Design.">Design.</a></li>
+      <li><a href="#data" data-ar="وتحليل البيانات" data-en="Data analysis.">Data analysis.</a></li>
+    </ul>
+    <p class="lead" data-ar="أساعد الأفراد والشركات على قول ما يريدون بوضوح، والوصول لمن يهمّهم، وفهم الأرقام وراء ذلك." data-en="I help people and companies say what they mean, reach the right audience, and understand the numbers behind it.">I help people and companies say what they mean, reach the right audience, and understand the numbers behind it.</p>
+    <a class="btn" href="#contact" data-ar="ابدأ مشروعًا معي" data-en="Start a project">Start a project</a>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 data-ar="الخدمات" data-en="Services">Services</h2>
+      <p class="sub" data-ar="أربع مهارات تكمل بعضها، وأستطيع العمل في واحدة منها أو في كلها." data-en="Four skills that work together. Hire me for one or all of them.">Four skills that work together. Hire me for one or all of them.</p>
+      <div class="grid">
+        <div class="card" id="content"><h3 data-ar="صناعة المحتوى" data-en="Content creation">Content creation</h3><p data-ar="مقالات وسكربتات ومنشورات وفيديوهات قصيرة بصوت واضح يشبه صاحبه." data-en="Articles, scripts, posts and short videos in a clear voice that sounds like you.">Articles, scripts, posts and short videos in a clear voice that sounds like you.</p></div>
+        <div class="card" id="marketing"><h3 data-ar="التسويق" data-en="Marketing">Marketing</h3><p data-ar="خطط وحملات على وسائل التواصل والإعلانات، تُقاس نتيجتها بالأرقام." data-en="Social and paid campaigns with plans you can measure against real numbers.">Social and paid campaigns with plans you can measure against real numbers.</p></div>
+        <div class="card" id="design"><h3 data-ar="التصميم" data-en="Design">Design</h3><p data-ar="هويات بصرية ومنشورات وعروض وواجهات سهلة القراءة." data-en="Brand identities, posts, presentations and interfaces that are easy to read.">Brand identities, posts, presentations and interfaces that are easy to read.</p></div>
+        <div class="card" id="data"><h3 data-ar="تحليل البيانات" data-en="Data analysis">Data analysis</h3><p data-ar="تنظيف البيانات وتحليلها وتحويلها إلى لوحات ورسوم وقرارات." data-en="Cleaning, analysing and turning data into dashboards, charts and decisions.">Cleaning, analysing and turning data into dashboards, charts and decisions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2 data-ar="الأعمال" data-en="Selected work">Selected work</h2>
+      <p class="sub" data-ar="استبدل هذه البطاقات بأعمالك الفعلية: صورة، وعنوان، وجملة عن النتيجة." data-en="Replace these cards with your real projects: an image, a title and one line about the result.">Replace these cards with your real projects: an image, a title and one line about the result.</p>
+      <div class="work">
+        <article class="card"><div class="thumb" data-ar="صورة المشروع" data-en="Project image">Project image</div><span class="tag" data-ar="تسويق" data-en="Marketing">Marketing</span><h3 data-ar="[عنوان المشروع]" data-en="[Project title]">[Project title]</h3><p data-ar="[ما فعلتَه، وما النتيجة بالأرقام.]" data-en="[What you did and the result in numbers.]">[What you did and the result in numbers.]</p></article>
+        <article class="card"><div class="thumb" data-ar="صورة المشروع" data-en="Project image">Project image</div><span class="tag" data-ar="تصميم" data-en="Design">Design</span><h3 data-ar="[عنوان المشروع]" data-en="[Project title]">[Project title]</h3><p data-ar="[ما فعلتَه، وما النتيجة.]" data-en="[What you did and the result.]">[What you did and the result.]</p></article>
+        <article class="card"><div class="thumb" data-ar="صورة المشروع" data-en="Project image">Project image</div><span class="tag" data-ar="تحليل بيانات" data-en="Data analysis">Data analysis</span><h3 data-ar="[عنوان المشروع]" data-en="[Project title]">[Project title]</h3><p data-ar="[ما فعلتَه، وما النتيجة.]" data-en="[What you did and the result.]">[What you did and the result.]</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div><h2 data-ar="عنّي" data-en="About">About</h2></div>
+      <div>
+        <p data-ar="[ثلاث جمل عن خلفيتك، وما الذي تجيده، ولماذا يجب أن يختارك العميل.]" data-en="[Three sentences about your background, what you do well and why a client should pick you.]">[Three sentences about your background, what you do well and why a client should pick you.]</p>
+        <p class="todo" data-ar="اكتبها بصوتك أنت، فالصدق أقوى من الصياغة الرسمية." data-en="Write it in your own voice. Plain beats polished.">Write it in your own voice. Plain beats polished.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2 data-ar="تواصل" data-en="Contact">Contact</h2>
+      <p class="sub" data-ar="أخبرني بمشروعك وسأرد عليك خلال يوم أو يومين." data-en="Tell me about your project and I will reply within a day or two.">Tell me about your project and I will reply within a day or two.</p>
+      <a class="big" href="mailto:zafrmohammed2025@gmail.com" dir="ltr">zafrmohammed2025@gmail.com</a>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/zafr-shehab-aa7b5139a/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/zafr_os/" target="_blank" rel="noopener">Instagram</a><a href="https://www.behance.net/zafrshehab" target="_blank" rel="noopener">Behance</a><a href="https://github.com/Zmohammed24" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/917888083876" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="y">2026</span> <span data-ar="Zafr Shehab" data-en="Zafr Shehab">Zafr Shehab</span></div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById("lang"), cur="en";
+  var titles={ar:"Zafr Shehab | محتوى، تسويق، تصميم، تحليل بيانات",en:"Zafr Shehab | Content, marketing, design, data analysis"};
+  function apply(l){
+    cur=l;
+    document.documentElement.lang=l;
+    document.documentElement.dir=l==="ar"?"rtl":"ltr";
+    document.title=titles[l];
+    document.querySelectorAll("[data-ar]").forEach(function(e){e.textContent=e.getAttribute("data-"+l)});
+    btn.textContent=l==="ar"?"English":"العربية";
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  btn.addEventListener("click",function(){apply(cur==="ar"?"en":"ar")});
+  var saved=null;try{saved=localStorage.getItem("lang")}catch(e){}
+  var pick=saved||((navigator.language||"en").toLowerCase().indexOf("ar")===0?"ar":"en");
+  if(pick==="ar")apply("ar");
+  document.getElementById("y").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
