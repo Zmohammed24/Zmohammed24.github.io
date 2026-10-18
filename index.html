@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zafr Shehab | محتوى، تسويق، تصميم، تحليل بيانات</title>
+<title>Zafr Shehab | Content, marketing, design, data analysis</title>
 <meta name="description" content="Content, marketing, design and data analysis.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,7 @@ h3{font-weight:700;font-size:1.2rem;margin:0 0 .3rem}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
 .card p{margin:0;color:var(--muted)}
 .tag{display:inline-block;background:var(--tint);color:var(--accent);font-size:.85rem;font-weight:500;padding:.1rem .7rem;border-radius:99px;margin-bottom:.8rem}
-.work{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.work{display:grid;grid-template-columns:minmax(0,28rem);gap:1.25rem}
 .thumb{height:9rem;border-radius:8px;background:var(--tint);margin-bottom:1rem;display:grid;place-items:center;color:var(--muted);font-size:.9rem}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
 .todo{color:var(--muted);font-style:italic}
@@ -67,67 +67,65 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);f
   <div class="wrap">
     <a class="brand" href="#top" data-ar="Zafr Shehab" data-en="Zafr Shehab">Zafr Shehab</a>
     <nav aria-label="Main">
-      <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
-      <a href="#work" data-ar="الأعمال" data-en="Work">الأعمال</a>
-      <a href="#about" data-ar="عنّي" data-en="About">عنّي</a>
-      <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
-      <button id="lang" type="button" aria-label="Change language">English</button>
+      <a href="#services" data-ar="الخدمات" data-en="Services">Services</a>
+      <a href="#work" data-ar="المشاريع" data-en="Projects">Projects</a>
+      <a href="#about" data-ar="عنّي" data-en="About">About</a>
+      <a href="#contact" data-ar="تواصل" data-en="Contact">Contact</a>
+      <button id="lang" type="button" aria-label="Change language">العربية</button>
     </nav>
   </div>
 </header>
 
 <main id="top">
   <div class="wrap hero">
-    <p class="hi" data-ar="أهلًا، أنا Zafr Shehab. أعمل في" data-en="Hi, I'm Zafr Shehab. I work in">أهلًا، أنا Zafr Shehab. أعمل في</p>
+    <p class="hi" data-ar="أهلًا، أنا Zafr Shehab وأعمل في" data-en="Hi, I'm Zafr Shehab. I work in">Hi, I'm Zafr Shehab. I work in</p>
     <ul>
-      <li><a href="#content" data-ar="صناعة المحتوى" data-en="Content.">صناعة المحتوى</a></li>
-      <li><a href="#marketing" data-ar="التسويق" data-en="Marketing.">التسويق</a></li>
-      <li><a href="#design" data-ar="التصميم" data-en="Design.">التصميم</a></li>
-      <li><a href="#data" data-ar="وتحليل البيانات" data-en="Data analysis.">وتحليل البيانات</a></li>
+      <li><a href="#content" data-ar="صناعة المحتوى" data-en="Content.">Content.</a></li>
+      <li><a href="#marketing" data-ar="التسويق" data-en="Marketing.">Marketing.</a></li>
+      <li><a href="#design" data-ar="التصميم" data-en="Design.">Design.</a></li>
+      <li><a href="#data" data-ar="وتحليل البيانات" data-en="Data analysis.">Data analysis.</a></li>
     </ul>
-    <p class="lead" data-ar="أساعد الأفراد والشركات على قول ما يريدون بوضوح، والوصول لمن يهمّهم، وفهم الأرقام وراء ذلك." data-en="I help people and companies say what they mean, reach the right audience, and understand the numbers behind it.">أساعد الأفراد والشركات على قول ما يريدون بوضوح، والوصول لمن يهمّهم، وفهم الأرقام وراء ذلك.</p>
-    <a class="btn" href="#contact" data-ar="ابدأ مشروعًا معي" data-en="Start a project">ابدأ مشروعًا معي</a>
+    <p class="lead" data-ar="أساعد الأفراد والشركات على قول ما يريدون بوضوح، والوصول لمن يهمّهم، وفهم الأرقام وراء ذلك." data-en="I help people and companies say what they mean, reach the right audience, and understand the numbers behind it.">I help people and companies say what they mean, reach the right audience, and understand the numbers behind it.</p>
+    <a class="btn" href="#contact" data-ar="ابدأ مشروعًا معي" data-en="Start a project">Start a project</a>
   </div>
 
   <section id="services">
     <div class="wrap">
-      <h2 data-ar="الخدمات" data-en="Services">الخدمات</h2>
-      <p class="sub" data-ar="أربع مهارات تكمل بعضها، وأستطيع العمل في واحدة منها أو في كلها." data-en="Four skills that work together. Hire me for one or all of them.">أربع مهارات تكمل بعضها، وأستطيع العمل في واحدة منها أو في كلها.</p>
+      <h2 data-ar="الخدمات" data-en="Services">Services</h2>
+      <p class="sub" data-ar="أربع مهارات تكمل بعضها، وأستطيع العمل في واحدة منها أو في كلها." data-en="Four skills that work together. Hire me for one or all of them.">Four skills that work together. Hire me for one or all of them.</p>
       <div class="grid">
-        <div class="card" id="content"><h3 data-ar="صناعة المحتوى" data-en="Content creation">صناعة المحتوى</h3><p data-ar="مقالات وسكربتات ومنشورات وفيديوهات قصيرة بصوت واضح يشبه صاحبه." data-en="Articles, scripts, posts and short videos in a clear voice that sounds like you.">مقالات وسكربتات ومنشورات وفيديوهات قصيرة بصوت واضح يشبه صاحبه.</p></div>
-        <div class="card" id="marketing"><h3 data-ar="التسويق" data-en="Marketing">التسويق</h3><p data-ar="خطط وحملات على وسائل التواصل والإعلانات، تُقاس نتيجتها بالأرقام." data-en="Social and paid campaigns with plans you can measure against real numbers.">خطط وحملات على وسائل التواصل والإعلانات، تُقاس نتيجتها بالأرقام.</p></div>
-        <div class="card" id="design"><h3 data-ar="التصميم" data-en="Design">التصميم</h3><p data-ar="هويات بصرية ومنشورات وعروض وواجهات سهلة القراءة." data-en="Brand identities, posts, presentations and interfaces that are easy to read.">هويات بصرية ومنشورات وعروض وواجهات سهلة القراءة.</p></div>
-        <div class="card" id="data"><h3 data-ar="تحليل البيانات" data-en="Data analysis">تحليل البيانات</h3><p data-ar="تنظيف البيانات وتحليلها وتحويلها إلى لوحات ورسوم وقرارات." data-en="Cleaning, analysing and turning data into dashboards, charts and decisions.">تنظيف البيانات وتحليلها وتحويلها إلى لوحات ورسوم وقرارات.</p></div>
+        <div class="card" id="content"><h3 data-ar="صناعة المحتوى" data-en="Content creation">Content creation</h3><p data-ar="مقالات وسكربتات ومنشورات وفيديوهات قصيرة بصوت واضح يشبه صاحبه." data-en="Articles, scripts, posts and short videos in a clear voice that sounds like you.">Articles, scripts, posts and short videos in a clear voice that sounds like you.</p></div>
+        <div class="card" id="marketing"><h3 data-ar="التسويق" data-en="Marketing">Marketing</h3><p data-ar="خطط وحملات على وسائل التواصل والإعلانات، تُقاس نتيجتها بالأرقام." data-en="Social and paid campaigns with plans you can measure against real numbers.">Social and paid campaigns with plans you can measure against real numbers.</p></div>
+        <div class="card" id="design"><h3 data-ar="التصميم" data-en="Design">Design</h3><p data-ar="هويات بصرية ومنشورات وعروض وواجهات سهلة القراءة." data-en="Brand identities, posts, presentations and interfaces that are easy to read.">Brand identities, posts, presentations and interfaces that are easy to read.</p></div>
+        <div class="card" id="data"><h3 data-ar="تحليل البيانات" data-en="Data analysis">Data analysis</h3><p data-ar="تنظيف البيانات وتحليلها وتحويلها إلى لوحات ورسوم وقرارات." data-en="Cleaning, analysing and turning data into dashboards, charts and decisions.">Cleaning, analysing and turning data into dashboards, charts and decisions.</p></div>
       </div>
     </div>
   </section>
 
   <section id="work">
     <div class="wrap">
-      <h2 data-ar="الأعمال" data-en="Selected work">الأعمال</h2>
-      <p class="sub" data-ar="استبدل هذه البطاقات بأعمالك الفعلية: صورة، وعنوان، وجملة عن النتيجة." data-en="Replace these cards with your real projects: an image, a title and one line about the result.">استبدل هذه البطاقات بأعمالك الفعلية: صورة، وعنوان، وجملة عن النتيجة.</p>
+      <h2 data-ar="المشاريع" data-en="Projects">Projects</h2>
+      <p class="sub" data-ar="أبدأ الآن مسيرتي المهنية، وهذا ما أبنيه حاليًا." data-en="I'm at the start of my freelance work. This is what I'm building now.">I'm at the start of my freelance work. This is what I'm building now.</p>
       <div class="work">
-        <article class="card"><div class="thumb" data-ar="صورة المشروع" data-en="Project image">صورة المشروع</div><span class="tag" data-ar="تسويق" data-en="Marketing">تسويق</span><h3 data-ar="[عنوان المشروع]" data-en="[Project title]">[عنوان المشروع]</h3><p data-ar="[ما فعلتَه، وما النتيجة بالأرقام.]" data-en="[What you did and the result in numbers.]">[ما فعلتَه، وما النتيجة بالأرقام.]</p></article>
-        <article class="card"><div class="thumb" data-ar="صورة المشروع" data-en="Project image">صورة المشروع</div><span class="tag" data-ar="تصميم" data-en="Design">تصميم</span><h3 data-ar="[عنوان المشروع]" data-en="[Project title]">[عنوان المشروع]</h3><p data-ar="[ما فعلتَه، وما النتيجة.]" data-en="[What you did and the result.]">[ما فعلتَه، وما النتيجة.]</p></article>
-        <article class="card"><div class="thumb" data-ar="صورة المشروع" data-en="Project image">صورة المشروع</div><span class="tag" data-ar="تحليل بيانات" data-en="Data analysis">تحليل بيانات</span><h3 data-ar="[عنوان المشروع]" data-en="[Project title]">[عنوان المشروع]</h3><p data-ar="[ما فعلتَه، وما النتيجة.]" data-en="[What you did and the result.]">[ما فعلتَه، وما النتيجة.]</p></article>
+        <article class="card"><span class="tag" data-ar="مشروع شخصي" data-en="Personal project">Personal project</span><h3>Zafr / Operating System</h3><p data-ar="أنظمة تشغيل شخصية تختصر الوقت وتمنحك السيطرة والسرعة الرقمية بدل الجهد الشاق. النظام الأول قريبًا." data-en="Personal operating systems that save time and give you control and digital speed instead of grinding. The first system is coming soon.">Personal operating systems that save time and give you control and digital speed instead of grinding. The first system is coming soon.</p><p><a href="https://www.instagram.com/zafr_os/" target="_blank" rel="noopener" data-ar="تابع على Instagram" data-en="Follow on Instagram">Follow on Instagram</a></p></article>
       </div>
     </div>
   </section>
 
   <section id="about">
     <div class="wrap about">
-      <div><h2 data-ar="عنّي" data-en="About">عنّي</h2></div>
+      <div><h2 data-ar="عنّي" data-en="About">About</h2></div>
       <div>
-        <p data-ar="[ثلاث جمل عن خلفيتك، وما الذي تجيده، ولماذا يجب أن يختارك العميل.]" data-en="[Three sentences about your background, what you do well and why a client should pick you.]">[ثلاث جمل عن خلفيتك، وما الذي تجيده، ولماذا يجب أن يختارك العميل.]</p>
-        <p class="todo" data-ar="اكتبها بصوتك أنت، فالصدق أقوى من الصياغة الرسمية." data-en="Write it in your own voice. Plain beats polished.">اكتبها بصوتك أنت، فالصدق أقوى من الصياغة الرسمية.</p>
+        <p data-ar="[ثلاث جمل عن خلفيتك، وما الذي تجيده، ولماذا يجب أن يختارك العميل.]" data-en="[Three sentences about your background, what you do well and why a client should pick you.]">[Three sentences about your background, what you do well and why a client should pick you.]</p>
+        <p class="todo" data-ar="اكتبها بصوتك أنت، فالصدق أقوى من الصياغة الرسمية." data-en="Write it in your own voice. Plain beats polished.">Write it in your own voice. Plain beats polished.</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2 data-ar="تواصل" data-en="Contact">تواصل</h2>
-      <p class="sub" data-ar="أخبرني بمشروعك وسأرد عليك خلال يوم أو يومين." data-en="Tell me about your project and I will reply within a day or two.">أخبرني بمشروعك وسأرد عليك خلال يوم أو يومين.</p>
+      <h2 data-ar="تواصل" data-en="Contact">Contact</h2>
+      <p class="sub" data-ar="أخبرني بمشروعك وسأرد عليك خلال يوم أو يومين." data-en="Tell me about your project and I will reply within a day or two.">Tell me about your project and I will reply within a day or two.</p>
       <a class="big" href="mailto:zafrmohammed2025@gmail.com" dir="ltr">zafrmohammed2025@gmail.com</a>
       <div class="social">
         <a href="https://www.linkedin.com/in/zafr-shehab-aa7b5139a/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/zafr_os/" target="_blank" rel="noopener">Instagram</a><a href="https://www.behance.net/zafrshehab" target="_blank" rel="noopener">Behance</a><a href="https://github.com/Zmohammed24" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/917888083876" target="_blank" rel="noopener">WhatsApp</a>
@@ -142,18 +140,21 @@ footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);f
 
 <script>
 (function(){
-  var btn=document.getElementById("lang"), cur="ar";
+  var btn=document.getElementById("lang"), cur="en";
+  var titles={ar:"Zafr Shehab | محتوى، تسويق، تصميم، تحليل بيانات",en:"Zafr Shehab | Content, marketing, design, data analysis"};
   function apply(l){
     cur=l;
     document.documentElement.lang=l;
     document.documentElement.dir=l==="ar"?"rtl":"ltr";
+    document.title=titles[l];
     document.querySelectorAll("[data-ar]").forEach(function(e){e.textContent=e.getAttribute("data-"+l)});
     btn.textContent=l==="ar"?"English":"العربية";
     try{localStorage.setItem("lang",l)}catch(e){}
   }
   btn.addEventListener("click",function(){apply(cur==="ar"?"en":"ar")});
   var saved=null;try{saved=localStorage.getItem("lang")}catch(e){}
-  if(saved==="en")apply("en");
+  var pick=saved||((navigator.language||"en").toLowerCase().indexOf("ar")===0?"ar":"en");
+  if(pick==="ar")apply("ar");
   document.getElementById("y").textContent=new Date().getFullYear();
 })();
 </script>
